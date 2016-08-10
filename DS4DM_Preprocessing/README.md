@@ -28,6 +28,6 @@ For all retained tables, the method additionally identifies:
 - the header row
 - context information
 
-The key column detection selects the column with the maximal number of unique values. In case of a tie, the left-most column is used. 
-The header detection identifies a row which has a different content pattern for the majority of its cells, with respect to the other rows. Currently this test is performed only on the first non-empty row of the table against the others. 
+The [key column detection](./src/main/java/org/webdatacommons/webtables/extraction/detection/KeyColumnDetection.java) selects the column with the maximal number of unique values. In case of a tie, the left-most column is used. 
+The [header detection](./src/main/java/org/webdatacommons/webtables/extraction/detection/HeaderDetection.java) identifies a row which has a different content pattern for the majority of its cells, with respect to the other rows. Currently this test is performed only on the first non-empty row of the table against the others. 
 As context information for each table we select 200 characters before and 200 after the table itself.
