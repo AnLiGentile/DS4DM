@@ -1,4 +1,4 @@
-# DS4DM_Preprocessing
+# DS4DM Preprocessing
 
 The preprocessing component takes care of extracting tables from various input data and produces a standard representation for each extracted table.
 
@@ -15,7 +15,7 @@ The extraction is performed with [BasicExtraction algorithm](./src/main/java/org
 - tables with "rowspan" or "colspan"
 - tables that do not contain header cells (“th” element)
 
-The remaining tables are classified as “layout” or “content” tables. The classification is done with the classifyTable method. It uses two models (SimpleCart_P1 and SimpleCart_P2). The first model identifies if the table is a LAYOUT table (only used for visualization formatting purposes). If this is not the case, then the second model is used to classify a table as:
+The remaining tables are classified as “layout” or “content” tables. The classification is done with the classifyTable method. It uses two models ([SimpleCart_P1](./src/main/resources/SimpleCart_P1.mdl) and [SimpleCart_P2](./src/main/resources/SimpleCart_P2.mdl)). The first model identifies if the table is a LAYOUT table (only used for visualization formatting purposes). If this is not the case, then the second model is used to classify a table as:
 
 - RELATION (containing multiple entities and relations)
 - ENTITY (describing a single entity)
