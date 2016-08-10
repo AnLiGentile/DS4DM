@@ -1,9 +1,12 @@
 # DS4DM_Preprocessing
 
 The preprocessing component takes care of extracting tables from various input data and produces a standard representation for each extracted table.
+
 It is currently implemented as a batch process. We assume that input data is stored locally, e.g. in the form of HTML Web pages.
-The process iterates over the locally stored pages, extracts useful tables and represent the output in a standardised format. 
-The extraction is performed with BasicExtraction algorithm which iterates through tables in the HTML page using the “table” tag. Heuristics are used to discard noisy tables:
+
+The [process](./src/main/java/de/mannheim/uni/ds4dm/preprocessing/html/LocalWebTableExtractorFromFolder.java) iterates over the locally stored pages, extracts useful tables and represent the output in a standardised format. 
+
+The extraction is performed with [BasicExtraction algorithm](./src/main/java/org/webdatacommons/webtables/extraction/BasicExtractionAlgorithm.java) which iterates through tables in the HTML page using the “table” tag. Heuristics are used to discard noisy tables:
 
 - tables inside forms
 - tables which contain sub-tables
@@ -24,7 +27,7 @@ For all retained tables, the method additionally identifies:
 - the key column
 - the header row
 - context information
-- 
+
 The key column detection selects the column with the maximal number of unique values. In case of a tie, the left-most column is used. 
 The header detection identifies a row which has a different content pattern for the majority of its cells, with respect to the other rows. Currently this test is performed only on the first non-empty row of the table against the others. 
 As context information for each table we select 200 characters before and 200 after the table itself.
