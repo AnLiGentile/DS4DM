@@ -10,6 +10,6 @@ The DS4DM backend components include:
 
 - [Preprocessing](./DS4DM_Preprocessing)
 - [Backend core]() (index, search and integration)
-- [Search service]()
+- [Search service](./DS4DM_webservice)
 
 For a detailed description of the DS4DM backend, please visit [web.informatik.uni-mannheim.de/ds4dm](http://web.informatik.uni-mannheim.de/ds4dm/)
