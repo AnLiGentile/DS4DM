@@ -26,6 +26,14 @@ import org.webdatacommons.webtables.tools.data.Dataset;
  */
 public class LocalWebTableExtractorFromFolder {
 	
+	
+
+	
+	/**
+	 * @param args to test use as args: resources/wikipedia_html resources/wikipedia_json
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	public static void main(String args[]) throws IOException, InterruptedException {
 		
 		ExtractionAlgorithm ea = new BasicExtractionAlgorithm(new HashMapStatsData(), true);
