@@ -9,7 +9,7 @@ The University of Mannheim team is developing the backend components to:
 The DS4DM backend components include:
 
 - [Preprocessing](./DS4DM_Preprocessing)
-- [Backend core]() (index, search and integration)
+- [Backend core](./DS4DM_Backend) (index, search and integration)
 - [Search service](./DS4DM_webservice)
 
 For a detailed description of the DS4DM backend, please visit [web.informatik.uni-mannheim.de/ds4dm](http://web.informatik.uni-mannheim.de/ds4dm/)
