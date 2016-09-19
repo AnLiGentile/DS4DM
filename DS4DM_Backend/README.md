@@ -24,7 +24,9 @@ In the indexing step we perform data type detection for each column, using manua
 
 Where:
 > [searchJoinsIndexing_lski013.conf](searchJoinsIndexing_lski013.conf) is a configuration file where you can define the location of the generated indexes
+
 > [test_indexing] is a label for the process
+
 > [resources/json/articles](resources) is the folder containing the json tables to index
 
 ##TableSearch
