@@ -1,8 +1,8 @@
 #Backend core 
 
 The Backend core encompasses two macro functionalities:
--data indexing (TableIndex)
--data searching (TableSearch)
+- data indexing (TableIndex)
+- data searching (TableSearch)
 
 ##TableIndex
 We currently support the indexing of:
