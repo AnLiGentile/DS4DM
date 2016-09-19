@@ -46,3 +46,5 @@ In the current prototype the search is a Keyword Based Search performed on the I
 
 As output TableSearch returns all the identified correspondences and a confidence score for each matching.
 
+> TableSearch fuctionalities are currently exposed as [DS4DM_webservice](../DS4DM_webservice).
+
