@@ -126,9 +126,10 @@ Returns:
 ##FETCH TABLE
 
 > GET {baseurl}/fetchTable?name={tableName}
+
 > **baseurl** = http://ds4dm-experimental.informatik.uni-mannheim.de 
  
-Response Body:
+###Response Body:
 JSON object with the requested table and meta data used for data fusion
 ```
 {  
