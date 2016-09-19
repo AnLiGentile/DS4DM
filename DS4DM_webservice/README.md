@@ -22,13 +22,14 @@ curl --header "Content-type: application/json" --request POST --data '{ "extensi
 
 #Examples of calls 
 
-##REST SERVICE SEARCH 
+##SEARCH 
 
-POST {baseurl}/search
-baseurl = http://ds4dm-experimental.informatik.uni-mannheim.de 
+> POST *{baseurl}/search*
+
+> **baseurl** = http://ds4dm-experimental.informatik.uni-mannheim.de 
 
 
-Request Body:
+###Request Body:
 JSON object with information about the API call. Statements “extensionAttributes” and “queryTable” are mandatory.
 ```
 {  
@@ -69,7 +70,7 @@ JSON object with information about the API call. Statements “extensionAttribut
 }
 ```
 
-Response Body:
+###Response Body:
 JSON object with several relevant tables (an array of arrays, each array representing information about one data table), the target schema, the correspondences at schema level and the correspondences at instance level.
 ```
 {  
@@ -116,42 +117,20 @@ JSON object with several relevant tables (an array of arrays, each array represe
 
 
 Returns:
-200 Ok: Success
-400 Bad request: Malformed JSON or otherwise wrong request parameter
-	(add 40x to encode specific errors, for now 400 fine)
-500 Internal server error: Unexpected server error. Probably a bug.
+- 200 Ok: Success
+- 400 Bad request: Malformed JSON or otherwise wrong request parameter
+- 500 Internal server error: Unexpected server error. Probably a bug.
 
 
 
+##FETCH TABLE
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##REST SERVICE FETCH TABLE
-GET {baseurl}/fetchTable?name={tableName}
-baseurl = http://ds4dm.informatik.uni-mannheim.de 
+> GET {baseurl}/fetchTable?name={tableName}
+> **baseurl** = http://ds4dm-experimental.informatik.uni-mannheim.de 
  
 Response Body:
 JSON object with the requested table and meta data used for data fusion
+```
 {  
    "dataTypes":{  
       "4_Population":"numeric",
@@ -210,15 +189,12 @@ JSON object with the requested table and meta data used for data fusion
       ]
    ]
 }
-
-
-
+```
 
 Returns:
-200 Ok: Success
-400 Bad request: Malformed JSON or otherwise wrong request parameter
-	(add 40x to encode specific errors, for now 400 fine)
-500 Internal server error: Unexpected server error. Probably a bug.
+- 200 Ok: Success
+- 400 Bad request: Malformed JSON or otherwise wrong request parameter
+- 500 Internal server error: Unexpected server error. Probably a bug.
 
 
 
