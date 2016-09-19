@@ -19,6 +19,9 @@ They all produce two index structures for the collection of tables:
 
 In the indexing step we perform data type detection for each column, using manually defined regular expressions to detect string, numeric value, date and link. 
 
+> To generate an index of json tables (the output of the [DS4DM_prprocessing]() component) you can run:
+> java -jar ds4dm_backend-0.0.1-SNAPSHOT-jar-with-dependencies.jar searchJoinsIndexing_lski013.conf test resources/json/articles web
+
 ##TableSearch
 The TableSearch component incorporates searching and integration facilities. TableSearch receives as input a query table, where the user indicates:
 
