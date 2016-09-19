@@ -20,7 +20,8 @@ They all produce two index structures for the collection of tables:
 In the indexing step we perform data type detection for each column, using manually defined regular expressions to detect string, numeric value, date and link. 
 
 > To generate an index starting from json tables (the output of the [DS4DM_Preprocessing](../DS4DM_Preprocessing) component) you can run:
-> java -jar ds4dm_backend-0.0.1-SNAPSHOT-jar-with-dependencies.jar searchJoinsIndexing_lski013.conf test_indexing resources/json/articles web
+
+> java -jar ds4dm_backend-0.0.1-SNAPSHOT-jar-with-dependencies.jar indexing.conf test_indexing resources/json/articles web
 
 Where:
 > [indexing.conf](indexing.conf) is a configuration file where you can define the location of the generated indexes
