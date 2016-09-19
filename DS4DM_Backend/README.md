@@ -29,11 +29,10 @@ The TableSearch process:
 
 - retrieves a set of relevant tables from the connected indexes of tables. 
 In the current prototype the search is a Keyword Based Search performed on the IndexOfHeaders.
-- identifies correspondences between relevant tables and the query table at:
+- identifies correspondences between relevant tables and the query table (currently implemented as a String matching process) at:
  - schema level (which columns in each retrieved table correspond to which columns in the query table)
  - instance level (which rows in each retrieved table correspond to which rows the query table)
 
-In the current prototype this is implemented as a String matching process.
 
 As output TableSearch returns all the identified correspondences and a confidence score for each matching.
 
