@@ -23,7 +23,7 @@ In the indexing step we perform data type detection for each column, using manua
 > java -jar ds4dm_backend-0.0.1-SNAPSHOT-jar-with-dependencies.jar searchJoinsIndexing_lski013.conf test_indexing resources/json/articles web
 
 Where:
-> [searchJoinsIndexing_lski013.conf](searchJoinsIndexing_lski013.conf) is a configuration file where you can define the location of the generated indexes
+> [indexing.conf](indexing.conf) is a configuration file where you can define the location of the generated indexes
 
 > [test_indexing] is a label for the process
 
