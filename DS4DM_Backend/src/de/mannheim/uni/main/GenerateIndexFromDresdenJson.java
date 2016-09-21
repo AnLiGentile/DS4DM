@@ -13,10 +13,10 @@ import de.mannheim.uni.pipelines.Pipeline;
  * 
  */
 public class GenerateIndexFromDresdenJson {
-//index anna ./searchJoins.conf /Users/annalisa/Documents/DS4DM_local/useful\ data/datasets/wikitables_small web
+//index anna ./indexing.conf /Users/annalisa/Documents/DS4DM_local/useful\ data/datasets/wikitables_small web
 	public static void main(String[] args) {
 
-		String configFile = "./searchJoins.conf";
+		String configFile = "./indexing.conf";
 		String pipeName = GenerateIndexFromDresdenJson.class.getName() + "_"
 				+ System.currentTimeMillis() + "_";
 

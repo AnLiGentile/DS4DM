@@ -16,7 +16,7 @@ public class GenerateIndexFromCsv {
 
 	public static void main(String[] args) {
 
-		String configFile = "./searchJoins.conf";
+		String configFile = "./indexing.conf";
 		String pipeName = GenerateIndexFromCsv.class.getName() + "_"
 				+ System.currentTimeMillis() + "_";
 

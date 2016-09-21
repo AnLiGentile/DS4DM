@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.mannheim.uni</groupId>
-	<artifactId>ds4dm_search</artifactId>
+	<artifactId>ds4dm_backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>de.mannheim.uni.main.GenerateIndexFromDresdenJson</mainClass>
+							<mainClass>de.mannheim.uni.main.GenerateIndexFromLocalWebpages</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
