@@ -1,15 +1,31 @@
 package de.mannheim.uni.datafusion;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.logging.Level;
 
-import de.mannheim.uni.model.DataType.ColumnDataType;
+import com.wcohen.ss.Jaccard;
+import com.wcohen.ss.tokens.NGramTokenizer;
+import com.wcohen.ss.tokens.SimpleTokenizer;
+
 import de.mannheim.uni.model.Table;
 import de.mannheim.uni.model.TableColumn;
+//import de.mannheim.uni.model.TableColumn.ColumnDataType;
+import de.mannheim.uni.model.DataType.ColumnDataType;
+
+import de.mannheim.uni.model.schema.ColumnObjectsMatch;
+import de.mannheim.uni.model.schema.ColumnScoreValue;
+import de.mannheim.uni.model.schema.TableObjectsMatch;
 import de.mannheim.uni.pipelines.Pipeline;
+import de.mannheim.uni.schemamatching.Matcher;
+import de.mannheim.uni.schemamatching.instance.InstanceBasedMatcher;
+import de.mannheim.uni.schemamatching.label.TablesLabeledBasedMatcher;
 import de.mannheim.uni.statistics.Timer;
 import de.mannheim.uni.units.SubUnit;
 import de.mannheim.uni.units.Unit;
@@ -23,14 +39,113 @@ import de.mannheim.uni.utils.concurrent.Parallel.Consumer;
  */
 public class TableDataCleaner {
 	private Table table;
+	private InstanceBasedMatcher instanceMatcher;
+	private TablesLabeledBasedMatcher labelMatcher;
 	private Pipeline pipeline;
 
 	public TableDataCleaner(Table table, Pipeline pipeline) {
 		this.pipeline = pipeline;
 		this.table = table;
-
+		instanceMatcher = new InstanceBasedMatcher();
+		labelMatcher = new TablesLabeledBasedMatcher(pipeline, table);
+		// TODO Auto-generated constructor stub
 	}
 
+	public Table cleanTable() {
+		Timer t = new Timer("Clean fused table");
+
+		// normalize units
+		normalizeUnits(table);
+
+		// find duplicates with schema matching
+		try {
+			if (pipeline.isUseExperimentalFusing()) {
+				// test: try a different matching approach
+				Matcher m = new Matcher(pipeline);
+				DuplicateResolver dResolver = new DuplicateResolver(pipeline);
+				//ExperimentalDuplicateResolver dResolver = new ExperimentalDuplicateResolver(
+						//pipeline);
+				TableObjectsMatch mEmpty = new TableObjectsMatch();
+
+				// use combined label & instance based matching first
+				TableObjectsMatch matching = m.matchColumns(table);
+
+				table = dResolver.resolveDuplicates(table, matching, mEmpty);
+
+				// run instance-based matching again to check columns that were
+				// merged by label-based similarity
+				// HashMap<TableColumn, HashMap<TableColumn, ColumnScoreValue>>
+				// scores = m
+				// .matchInstances(table);
+				// m.printMatchingResult(scores,
+				// pipeline.getComplementaryScore(),
+				// "instance2_scores.csv");
+				//
+				// matching = m.decideComplementaryObjectMatching(scores,
+				// table);
+				// m.printTableObjectsMatch(matching, "instance2_decided.csv");
+				//
+				// table = dResolver.resolveDuplicates(table, matching, mEmpty);
+
+				// TableObjectsMatch matching = m.clusterColumns(table);
+				// m.printTableObjectsMatch(matching, "clusters.csv");
+				// table = dResolver.resolveDuplicates(table, matching, mEmpty);
+
+			} else {
+				pipeline.getLogger().info(
+						"Detecting duplicates with instance matching");
+				long start = System.currentTimeMillis();
+				TableObjectsMatch fusedDuplicates = instanceMatcher
+						.checkForDuplicates(table, pipeline);
+				pipeline.getLogger().info(
+						"Instance based matching took "
+								+ (System.currentTimeMillis() - start) / 1000
+								+ "s");
+				if (fusedDuplicates.getColumns().size() > 0) {
+					pipeline.getLogger().info(
+							"Detecting duplicates with label based matching");
+					start = System.currentTimeMillis();
+					TableObjectsMatch fusedDuplicates2 = labelMatcher
+							.checkForDuplicates(table, fusedDuplicates, pipeline);
+					pipeline.getLogger().info(
+							"Label based matching took "
+									+ (System.currentTimeMillis() - start)
+									/ 1000 + "s");
+					pipeline.getLogger().info("Merging duplicates");
+					DuplicateResolver dResolver = new DuplicateResolver(
+							pipeline);
+					start = System.currentTimeMillis();
+					table = dResolver.resolveDuplicates(table, fusedDuplicates,
+							fusedDuplicates2);
+					pipeline.getLogger().info(
+							"Merging took "
+									+ (System.currentTimeMillis() - start)
+									/ 1000 + "s");
+				}
+			}
+
+			// write the table to CSV
+			table.writeTableToFile("fusedtable_with_nulls");
+			table.writeColumnList("fusedtable_with_nulls.columns.csv");
+
+			// filter columns by column density
+			pipeline.getLogger().info("Removeing null columns");
+			table = filterColumnsByColumnDensity(table);
+			
+			//table.writeTableToFile("fusedtable_with_null_rows");
+			
+			// filter rows by row density
+			pipeline.getLogger().info("Removing null rows");
+			table = filterRowsByRowDensity(table);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		t.stop();
+		return table;
+	}
 
 	private void normalizeUnits(Table table) {
 		for (TableColumn column : table.getColumns()) {
@@ -291,10 +406,10 @@ public class TableDataCleaner {
 		return fusedTable;
 	}
 	
-//	public static void main(String[] args) {
-//		NGramTokenizer tok = new NGramTokenizer(2, 4, true,
-//				new SimpleTokenizer(true, true));
-//		Jaccard sim = new Jaccard(tok);
-//		System.out.println(sim.score("River", "rdf-schema#label"));
-//	}
+	public static void main(String[] args) {
+		NGramTokenizer tok = new NGramTokenizer(2, 4, true,
+				new SimpleTokenizer(true, true));
+		Jaccard sim = new Jaccard(tok);
+		System.out.println(sim.score("River", "rdf-schema#label"));
+	}
 }

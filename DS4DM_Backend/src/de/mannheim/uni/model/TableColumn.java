@@ -19,6 +19,11 @@ public class TableColumn
 	implements java.io.Serializable
 {
 
+	//TODO this might generate problems
+//	public static enum ColumnDataType {
+//		numeric, string, coordinate, date, link, bool, unknown, unit, list
+//	};
+	
 	private int nmNtUniqueValues;
 
 	public void setNmNtUniqueValues(int nmNtUniqueValues) {
@@ -357,5 +362,7 @@ public class TableColumn
 		return new EqualsBuilder().append(header, rhs.header)
 				.append(dataSource, rhs.dataSource).isEquals();
 	}
+	
+	
 
 }

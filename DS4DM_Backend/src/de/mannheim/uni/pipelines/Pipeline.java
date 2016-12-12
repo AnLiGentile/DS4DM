@@ -16,6 +16,9 @@ import java.util.logging.SimpleFormatter;
 import org.apache.commons.io.FileUtils;
 
 import de.mannheim.uni.index.IndexManager;
+import de.mannheim.uni.index.infogather.AttributesIndexManager;
+import de.mannheim.uni.index.infogather.KeyIndexManager;
+
 /**
  * @author petar
  * 
@@ -147,8 +150,10 @@ public class Pipeline {
 	// INFO GATHER PARAMETERS
 
 	private String infoGatherKeyIndexLocation;
+	private KeyIndexManager infoGatherKeyIndexManager;
 
 	private String infoGatherAttributeIndexLocation;
+	private AttributesIndexManager infoGatherAttributeIndexManager;
 	private String t2pprIndexPath;
 
 	private ExecutionModel executionModel;
@@ -179,7 +184,18 @@ public class Pipeline {
 		return infoGatherAttributeIndexLocation;
 	}
 
+	public AttributesIndexManager getInfoGatherAttributeIndexManager() {
+		return infoGatherAttributeIndexManager;
+	}
 
+	public KeyIndexManager getInfoGatherKeyIndexManager() {
+		return infoGatherKeyIndexManager;
+	}
+
+	public void setInfoGatherKeyIndexManager(
+			KeyIndexManager infoGatherKeyIndexManager) {
+		this.infoGatherKeyIndexManager = infoGatherKeyIndexManager;
+	}
 
 	public String getInfoGatherKeyIndexLocation() {
 		return infoGatherKeyIndexLocation;
@@ -454,6 +470,8 @@ public class Pipeline {
 		pip.graphMappedIDFile = properties
 				.getProperty("infogather.graphMappedIDFile");
 
+		pip.infoGatherKeyIndexManager = new KeyIndexManager(pip);
+		pip.infoGatherAttributeIndexManager = new AttributesIndexManager(pip);
 
 		// engine config
 		pip.executionModel = ExecutionModel.valueOf(properties
@@ -716,17 +734,13 @@ public class Pipeline {
 	}
 
 	private static Logger createLogger(String name) {
-		File logs = new File ("logs");
-		if (!logs.exists())
-			logs.mkdirs();
-
-		Logger logger = Logger.getLogger("logs/"+name + "Logger");
+		Logger logger = Logger.getLogger(name + "Logger");
 		FileHandler fh;
 
 		try {
 
 			// This block configure the logger with handler and formatter
-			fh = new FileHandler("logs/"+name + "Logger.log");
+			fh = new FileHandler(name + "Logger.log");
 			logger.addHandler(fh);
 			// logger.setLevel(Level.ALL);
 			SimpleFormatter formatter = new SimpleFormatter();

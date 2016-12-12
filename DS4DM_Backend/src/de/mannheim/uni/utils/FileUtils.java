@@ -29,7 +29,75 @@ public class FileUtils {
 		return megabytes;
 
 	}
+	
+	public static List<String> readFilesFromFolder(String folderPath,
+			double maxSize) {
+		List<String> files = new ArrayList<String>();
+		File folder = new File(folderPath);
 
+		for (File fileEntry : folder.listFiles()) {
+			// System.out.println("added" + fileEntry.getAbsolutePath());
+			if (FileUtils.getFileSize(fileEntry) <= maxSize
+					&& (fileEntry.getName().endsWith(".gz") || fileEntry
+							.getName().endsWith(".tar")))
+
+				files.add(fileEntry.getAbsolutePath());
+		}
+		return files;
+	}
+
+	/**
+	 * reads the data files paths for InfoGather
+	 * 
+	 * @param folderPath
+	 * @return
+	 */
+	public static Map<String, List<String>> getFilePaths(String folderPath) {
+		Map<String, List<String>> paths = new HashMap<String, List<String>>();
+
+		File folder = new File(folderPath);
+		for (File fileEntry : folder.listFiles()) {
+			String fileName = fileEntry.getName();
+			if (fileName.endsWith("CSV")) {
+				String filePath = fileEntry.getAbsolutePath();
+				String prexis = fileName.replace("_CSV", "");
+				List<String> innerPaths = new LinkedList<String>();
+				if (paths.containsKey(prexis)) {
+					innerPaths = paths.get(prexis);
+				}
+				innerPaths.add(0, filePath);
+				paths.put(prexis, innerPaths);
+			} else if (fileName.endsWith("HTML")) {
+				String filePath = fileEntry.getAbsolutePath();
+				String prexis = fileName.replace("_HTML", "");
+				List<String> innerPaths = new LinkedList<String>();
+				if (paths.containsKey(prexis)) {
+					innerPaths = paths.get(prexis);
+				}
+				if (innerPaths.size() < 1)
+					innerPaths.add(0, "dummy");
+				innerPaths.add(1, filePath);
+				paths.put(prexis, innerPaths);
+			} else if (fileName.endsWith("META")) {
+				String filePath = fileEntry.getAbsolutePath();
+				String prexis = fileName.replace("_META", "");
+				List<String> innerPaths = new LinkedList<String>();
+				if (paths.containsKey(prexis)) {
+					innerPaths = paths.get(prexis);
+				}
+				if (innerPaths.size() < 2) {
+					innerPaths.add(0, "dummy");
+					innerPaths.add(1, "dummy");
+				}
+				innerPaths.add(2, filePath);
+				paths.put(prexis, innerPaths);
+			}
+
+		}
+
+		return paths;
+	}
+	
 	/**
 	 * returns the list of .gz or .tar files conatined in a folder
 	 * @param folderPath
