@@ -5,8 +5,12 @@ import java.util.Map;
 
 import de.mannheim.uni.IO.ConvertFileToTable.ReadTableType;
 import de.mannheim.uni.index.ParallelIndexer;
+import de.mannheim.uni.infogather.QueryProcessor;
+import de.mannheim.uni.mongodb.CSV2MongoParallelWriter;
 import de.mannheim.uni.pipelines.Pipeline;
 import de.mannheim.uni.pipelines.Pipeline.ExecutionModel;
+import de.mannheim.uni.searchjoin.SearchJoin;
+import de.mannheim.uni.statistics.ValuesDistributionAnalyzer;
 
 /**
  * @author petar
@@ -44,50 +48,50 @@ public class SearchJoinMain {
 			indexer.indexRepos(repos);
 			break;
 
-//		case searchJoin:
-//			if (args.length < 4) {
-//				System.out.println("Please provide query table!");
-//				return;
-//			}
-//
-//			if(pipeline.getExecutionModel()==ExecutionModel.MSE)
-//			{
-//				SearchJoin searchJoin = new SearchJoin(pipeline);
-//	
-//				String queryTablePath = args[3];
-//				// set the additional header filter
-//				if (args.length >= 4) {
-//					for (int i = 4; i < args.length; i++) {
-//						pipeline.getHeaderRefineAttrs().add(args[i]);
-//						System.out.println("added headers: " + args[i]);
-//					}
-//				}
-//                                
-//				searchJoin.searchJoinForTable(queryTablePath);
-//	
-//				pipeline.getIndexManager().closeIndexReader();
-//			}
-//			else
-//			{
-//				QueryProcessor qp = new QueryProcessor(pipeline);
-//				
-//				qp.AugmentTable(args[3], args[4]);
-//			}
-//
-//			break;
-//
-//		case stats:
-//			ValuesDistributionAnalyzer dist = new ValuesDistributionAnalyzer();
-//			dist.makeStatsForRepo(args[3], pipeline,
-//					ReadTableType.valueOf(args[4]));
-//			break;
-//		case insertInMongo:
-//			CSV2MongoParallelWriter mongoWriter = new CSV2MongoParallelWriter(
-//					pipeline);
-//			mongoWriter.insertFilesInMongo(args[2],
-//					ReadTableType.valueOf(args[3]));
-//
-//			break;
+		case searchJoin:
+			if (args.length < 4) {
+				System.out.println("Please provide query table!");
+				return;
+			}
+
+			if(pipeline.getExecutionModel()==ExecutionModel.MSE)
+			{
+				SearchJoin searchJoin = new SearchJoin(pipeline);
+	
+				String queryTablePath = args[3];
+				// set the additional header filter
+				if (args.length >= 4) {
+					for (int i = 4; i < args.length; i++) {
+						pipeline.getHeaderRefineAttrs().add(args[i]);
+						System.out.println("added headers: " + args[i]);
+					}
+				}
+                                
+				searchJoin.searchJoinForTable(queryTablePath);
+	
+				pipeline.getIndexManager().closeIndexReader();
+			}
+			else
+			{
+				QueryProcessor qp = new QueryProcessor(pipeline);
+				
+				qp.AugmentTable(args[3], args[4]);
+			}
+
+			break;
+
+		case stats:
+			ValuesDistributionAnalyzer dist = new ValuesDistributionAnalyzer();
+			dist.makeStatsForRepo(args[3], pipeline,
+					ReadTableType.valueOf(args[4]));
+			break;
+		case insertInMongo:
+			CSV2MongoParallelWriter mongoWriter = new CSV2MongoParallelWriter(
+					pipeline);
+			mongoWriter.insertFilesInMongo(args[2],
+					ReadTableType.valueOf(args[3]));
+
+			break;
 
 		default:
 			// throw some exception

@@ -57,6 +57,17 @@
 	</build>
 
 	<dependencies>
+<!-- https://mvnrepository.com/artifact/org.graphchi/graphchi-java_2.11 -->
+<dependency>
+    <groupId>org.graphchi</groupId>
+    <artifactId>graphchi-java_2.11</artifactId>
+    <version>0.2.1</version>
+</dependency>
+		<dependency>
+			<groupId>edu.fppr</groupId>
+			<artifactId>fppr</artifactId>
+			<version>0.1</version>
+		</dependency>
 			<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-core</artifactId>
