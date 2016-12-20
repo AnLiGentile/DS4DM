@@ -1,28 +1,19 @@
 package de.mannheim.uni.ds4dm.searcher.de.mannheim.uni.ds4dm.searcher.test;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
+//import de.mannheim.uni.ds4dm.searcher.CandidateBuilder_fromJsonFolder;
 
 import com.google.gson.JsonSyntaxException;
-import com.rapidminer.extension.json.Correspondence;
-import com.rapidminer.extension.json.JSONRelatedTablesRequest;
-import com.rapidminer.extension.json.JSONRelatedTablesResponse;
-import com.rapidminer.extension.json.JSONTableResponse;
-import com.rapidminer.extension.json.TableInformation;
-
+import com.rapidminer.extension.json.*;
 import de.mannheim.uni.ds4dm.model.TableData;
 import de.mannheim.uni.ds4dm.model.TableData2TableDS4DM;
-import de.mannheim.uni.ds4dm.searcher.CandidateBuilder_fromJsonFolder;
 import de.mannheim.uni.ds4dm.searcher.CandidateBuilder_fromLuceneIndex;
 import de.mannheim.uni.ds4dm.searcher.DS4DMBasicMatcher;
 import de.mannheim.uni.ds4dm.utils.ReadWriteGson;
 import de.mannheim.uni.normalizer.StringNormalizer;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
 public class GenerateMatchingExample_withKeywords {
 
@@ -37,18 +28,18 @@ public class GenerateMatchingExample_withKeywords {
 		// File selectedTableFolder = new File(
 		// "/Users/annalisa/Documents/DS4DM_local/useful data/mappings");
 		File selectedTableFolder = new File(
-				"/Users/annalisa/Documents/AllWorkspaces/ds4dm/T2Kv2/T2K.Match/testJsonRes");
+				"/home/steffen/workspace/DS4DM_gs/resources/GS_domi/context_json_url/");
 
 		File responseFolder = new File(
-				"/Users/annalisa/Documents/DS4DM_local/useful data/USE_CASE_1/response_material");
+				"");
 		responseFolder.mkdirs();
-		File fetchedTablesFolder = new File(responseFolder.getAbsolutePath() + "/fetchedTables");
+		File fetchedTablesFolder = new File(responseFolder.getAbsolutePath() + "fetchedTables");
 		fetchedTablesFolder.mkdirs();
-		File response = new File(responseFolder.getAbsolutePath() + "/response.json");
+		File response = new File(responseFolder.getAbsolutePath() + "response.json");
 
-		CandidateBuilder_fromJsonFolder candBuilder = new CandidateBuilder_fromJsonFolder(selectedTableFolder);
-
-		File request = new File("request.json");
+		//CandidateBuilder_fromJsonFolder candBuilder = new CandidateBuilder_fromJsonFolder(selectedTableFolder);
+		CandidateBuilder_fromLuceneIndex candBuilder = new CandidateBuilder_fromLuceneIndex("DS4DM_Backend/indexing.conf");
+		File request = new File("DS4DM_Backend/request.json");
 
 		JSONRelatedTablesRequest qts = new JSONRelatedTablesRequest();
 		ReadWriteGson<JSONRelatedTablesRequest> rwj = new ReadWriteGson<JSONRelatedTablesRequest>(qts);
@@ -67,36 +58,36 @@ public class GenerateMatchingExample_withKeywords {
 		// GenerateMatchingExample_withKeywords.serchTables(request,
 		// fetchedTablesFolder, response, candBuilder);
 
-		serchTables(request, fetchedTablesFolder, response, candBuilder);
+		serchTables_fromLucene(request, fetchedTablesFolder, response, candBuilder);
 
 	}
 
-	public static void serchTables(File request, File fetchedTablesFolder, File response,
-			CandidateBuilder_fromJsonFolder candBuilder) {
-		try {
-
-			DS4DMBasicMatcher matcher = constructQueryTable(request);
-
-			JSONRelatedTablesResponse responseMappimg = constructResponseObject(matcher);
-
-			// ***********************************
-
-			Map<String, TableData> candidates = candBuilder.finCandidates(matcher);
-
-			System.out.println("relevant tables: " + candidates.keySet());
-
-			{
-				// read all relevant tables
-				// for each table
-
-				generateMatches(fetchedTablesFolder, response, matcher, responseMappimg, candidates);
-
-			}
-		} catch (JsonSyntaxException | IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	public static void serchTables(File request, File fetchedTablesFolder, File response,
+//			CandidateBuilder_fromJsonFolder candBuilder) {
+//		try {
+//
+//			DS4DMBasicMatcher matcher = constructQueryTable(request);
+//
+//			JSONRelatedTablesResponse responseMappimg = constructResponseObject(matcher);
+//
+//			// ***********************************
+//
+//			Map<String, TableData> candidates = candBuilder.finCandidates(matcher);
+//
+//			System.out.println("relevant tables: " + candidates.keySet());
+//
+//			{
+//				// read all relevant tables
+//				// for each table
+//
+//				generateMatches(fetchedTablesFolder, response, matcher, responseMappimg, candidates);
+//
+//			}
+//		} catch (JsonSyntaxException | IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 
 	public static void serchTables_fromLucene(File request, File fetchedTablesFolder, File response,
 			CandidateBuilder_fromLuceneIndex candBuilder) {
@@ -131,37 +122,37 @@ public class GenerateMatchingExample_withKeywords {
 		}
 	}
 
-	public static void serchTables_fromFolder(File request, File fetchedTablesFolder, File response,
-			CandidateBuilder_fromJsonFolder candBuilder) {
-
-		// query table
-		DS4DMBasicMatcher matcher = null;
-		try {
-			matcher = constructQueryTable(request);
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-
-		if (matcher != null) {
-			// construct response object
-			JSONRelatedTablesResponse responseMappimg = constructResponseObject(matcher);
-
-			// fetch candidate tables
-			Map<String, TableData> candidates = candBuilder.finCandidates(matcher);
-			System.out.println("relevant tables: " + candidates.keySet());
-
-			{
-				try {
-					generateMatches(fetchedTablesFolder, response, matcher, responseMappimg, candidates);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-
-			}
-		}
-	}
+//	public static void serchTables_fromFolder(File request, File fetchedTablesFolder, File response,
+//			CandidateBuilder_fromJsonFolder candBuilder) {
+//
+//		// query table
+//		DS4DMBasicMatcher matcher = null;
+//		try {
+//			matcher = constructQueryTable(request);
+//		} catch (IOException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+//
+//		if (matcher != null) {
+//			// construct response object
+//			JSONRelatedTablesResponse responseMappimg = constructResponseObject(matcher);
+//
+//			// fetch candidate tables
+//			Map<String, TableData> candidates = candBuilder.finCandidates(matcher);
+//			System.out.println("relevant tables: " + candidates.keySet());
+//
+//			{
+//				try {
+//					generateMatches(fetchedTablesFolder, response, matcher, responseMappimg, candidates);
+//				} catch (IOException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//
+//			}
+//		}
+//	}
 
 	private static void generateMatches(File fetchedTablesFolder, File response, DS4DMBasicMatcher matcher,
 			JSONRelatedTablesResponse responseMappimg, Map<String, TableData> candidates) throws IOException {
@@ -171,7 +162,7 @@ public class GenerateMatchingExample_withKeywords {
 
 		List<TableInformation> relevamntTables_ds4dm = new ArrayList<TableInformation>();
 
-		for (Entry<String, TableData> table : candidates.entrySet()) {
+		for (Map.Entry<String, TableData> table : candidates.entrySet()) {
 			// System.out.println("*** MATCHING TABLE ***"+
 			// table.getKey());//add table name to TableData
 
@@ -189,7 +180,7 @@ public class GenerateMatchingExample_withKeywords {
 							.fromAnnotatedTable2JSONTableResponse(table.getValue(), table.getKey());
 
 					String[] relTableHeadres = table.getValue().getColumnHeaders();
-		
+
 					List<String> relTableHeadresList = Arrays.asList(relTableHeadres);
 
 					for (int i = 0; i < relTableHeadres.length; i++) {
