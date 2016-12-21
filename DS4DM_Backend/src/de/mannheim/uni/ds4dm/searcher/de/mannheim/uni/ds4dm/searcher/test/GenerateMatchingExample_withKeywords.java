@@ -38,8 +38,8 @@ public class GenerateMatchingExample_withKeywords {
 		File response = new File(responseFolder.getAbsolutePath() + "response.json");
 
 		//CandidateBuilder_fromJsonFolder candBuilder = new CandidateBuilder_fromJsonFolder(selectedTableFolder);
-		CandidateBuilder_fromLuceneIndex candBuilder = new CandidateBuilder_fromLuceneIndex("DS4DM_Backend/indexing.conf");
-		File request = new File("DS4DM_Backend/request.json");
+		CandidateBuilder_fromLuceneIndex candBuilder = new CandidateBuilder_fromLuceneIndex("indexing.conf");
+		File request = new File("request.json");
 
 		JSONRelatedTablesRequest qts = new JSONRelatedTablesRequest();
 		ReadWriteGson<JSONRelatedTablesRequest> rwj = new ReadWriteGson<JSONRelatedTablesRequest>(qts);

@@ -67,7 +67,7 @@ public class UnitManager {
 		Unit unit = new Unit();
 		unit.setName("Currency");
 		try {
-			File fileDir = new File("DS4DM_Backend/Units/Currency.txt");
+			File fileDir = new File("Units/Currency.txt");
 
 			BufferedReader in = new BufferedReader(new InputStreamReader(
 					new FileInputStream(fileDir), "UTF8"));
