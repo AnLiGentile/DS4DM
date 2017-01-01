@@ -4,23 +4,34 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonSyntaxException;
+import com.rapidminer.extension.json.Correspondence;
 import com.rapidminer.extension.json.JSONRelatedTablesRequest;
+import com.rapidminer.extension.json.JSONRelatedTablesResponse;
+import com.rapidminer.extension.json.JSONTableResponse;
+import com.rapidminer.extension.json.TableInformation;
 
 import de.mannheim.uni.ds4dm.demo1.exploreData.GenerateMatchingExample_withKeywords;
+import de.mannheim.uni.ds4dm.model.TableData;
+import de.mannheim.uni.ds4dm.model.TableData2TableDS4DM;
 import de.mannheim.uni.ds4dm.searcher.CandidateBuilder_fromLuceneIndex;
+import de.mannheim.uni.ds4dm.searcher.DS4DMBasicMatcher;
 import de.mannheim.uni.ds4dm.utils.ReadWriteGson;
+import de.mannheim.uni.normalizer.StringNormalizer;
+import de.mannheim.uni.searchJoin.BooleanSearch;
 import play.mvc.Controller;
-import play.*;
-import play.mvc.*;
-
-import views.html.*;
+import play.mvc.Result;
 
 public class ExtendTable extends Controller {
 	
@@ -30,8 +41,140 @@ public class ExtendTable extends Controller {
 			"public/exampleData/mappings");
 	//TODO change
 	String conf = "testConf.conf";
-
 	
+	private static JSONRelatedTablesResponse constructResponseObject(DS4DMBasicMatcher matcher) {
+		// construct response object
+		// ***********************
+		JSONRelatedTablesResponse responseMappimg = new JSONRelatedTablesResponse();
+		responseMappimg.setTargetSchema(matcher.getTargetSchema());
+		responseMappimg.setExtensionAttributes2TargetSchema(matcher.getE2t_str());
+		responseMappimg.setQueryTable2TargetSchema(matcher.getQ2t_str());
+		Map<String, String> dataT = new HashMap<String, String>();
+		for (int i = 0; i < matcher.getTargetSchema().size(); i++) {
+			dataT.put(matcher.getTargetSchema().get(i), matcher.getTargetSchemaDataTypes().get(i).toString());
+		}
+		responseMappimg.setDataTypes(dataT);
+		return responseMappimg;
+	}
+	
+	private static void generateMatches(File fetchedTablesFolder, File response, DS4DMBasicMatcher matcher,
+			JSONRelatedTablesResponse responseMappimg, Map<String, TableData> candidates) throws IOException {
+
+		// read all relevant tables
+		// for each table
+
+		List<TableInformation> relevamntTables_ds4dm = new ArrayList<TableInformation>();
+
+		for (Entry<String, TableData> table : candidates.entrySet()) {
+			// System.out.println("*** MATCHING TABLE ***"+
+			// table.getKey());//add table name to TableData
+
+			if (table.getValue().getRelation() != null) {
+				try {
+					// create an object for the current table
+					TableInformation tm_ds4dm = new TableInformation();
+					// tm_ds4dm.setTableName(f.getName());
+
+					// map schema
+
+					Map<String, Correspondence> tableSchema2TargetSchema = new HashMap<String, Correspondence>();
+
+					JSONTableResponse t_sab = TableData2TableDS4DM
+							.fromAnnotatedTable2JSONTableResponse(table.getValue(), table.getKey());
+
+					String[] relTableHeadres = table.getValue().getColumnHeaders();
+		
+					List<String> relTableHeadresList = Arrays.asList(relTableHeadres);
+
+					for (int i = 0; i < relTableHeadres.length; i++) {
+						String currentAttribute = StringNormalizer.format(relTableHeadres[i]);
+						if (matcher.getNormalizedTargetSchema().contains(currentAttribute)) {
+							int matchedIndex = matcher.getNormalizedTargetSchema().indexOf(currentAttribute);
+
+							tableSchema2TargetSchema.put(Integer.toString(i) + "_" + relTableHeadres[i],
+									new Correspondence(matcher.getTargetSchema().get(matchedIndex), 0.99));
+							// TODO remove the index from the name, use these
+							// instead of previous
+							// tableSchema2TargetSchema.put(relTableHeadres[i],
+							// new
+							// Correspondence(matcher.getTargetSchema().get(matchedIndex),
+							// 0.99));
+							// System.out.println("mapped: "
+							// + matchedIndex + " --> " + i);
+						}
+						// else {
+						// System.out.println(matcher.getNormalizedTargetSchema()
+						// + " does not contain --> "
+						// + relTableHeadres[i]);
+						// }
+					}
+
+					tm_ds4dm.setTableName(table.getKey());
+					tm_ds4dm.setTableSchema2TargetSchema(tableSchema2TargetSchema);
+
+					// map instances
+
+					Map<String, Correspondence> instancesCorrespondences2QueryTable = new HashMap<String, Correspondence>();
+
+					// get the subject column and check if present in query
+					// table
+					String[] col = table.getValue().getRelation()[table.getValue().getKeyColumnIndex()];
+					for (int i = 0; i < col.length; i++) {
+						if (i != table.getValue().getHeaderRowIndex()) {
+
+							if (matcher.getSubjectsFromQueryTable().contains(col[i])) {
+
+								// here subjectsFromQueryTable have the first
+								// row removed (as it's the header)
+								// so need to +1 on the index
+
+								String matched = Integer
+										.toString(matcher.getSubjectsFromQueryTable().indexOf(col[i]) + 1);
+								instancesCorrespondences2QueryTable.put(Integer.toString(i),
+										new Correspondence(matched, 0.99));
+
+								// System.out.println("match: " + table.getKey()
+								// + "\t" + Integer.toString(i) + "\t"
+								// + col[i] + "\t" + matched);
+							}
+						}
+					}
+
+					if (!instancesCorrespondences2QueryTable.isEmpty()) {
+
+						tm_ds4dm.setInstancesCorrespondences2QueryTable(instancesCorrespondences2QueryTable);
+						relevamntTables_ds4dm.add(tm_ds4dm);
+						ReadWriteGson<JSONTableResponse> resp = new ReadWriteGson<JSONTableResponse>(t_sab);
+						File current_table = new File(fetchedTablesFolder.getAbsolutePath() + "/" + table.getKey());
+						resp.writeJson(current_table);
+						System.out.println("**Matched table: " + table.getKey() + relTableHeadresList);
+						System.out.println("schema correspondences: " + tm_ds4dm.getTableSchema2TargetSchema());
+						System.out.println(
+								"instances correspondences: " + tm_ds4dm.getInstancesCorrespondences2QueryTable());
+					}
+
+				} catch (JsonSyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			} else {
+				System.err.println("Empty relation in table: " + table.getKey());
+			}
+		}
+
+		responseMappimg.setRelatedTables(relevamntTables_ds4dm);
+
+		ReadWriteGson<JSONRelatedTablesResponse> resp = new ReadWriteGson<JSONRelatedTablesResponse>(responseMappimg);
+		resp.writeJson(response);
+
+	}
 	
 	/**
 	 * The matching is performed by the SearJoin Service, via a POST request to http://ds4dm.informatik.uni-mannheim.de/search
@@ -127,9 +270,13 @@ the correspondence between instances in the table and those from the query table
 			if (!fetchedTablesFolder.exists())
 				fetchedTablesFolder.mkdirs();
 //			GenerateMatchingExample_withKeywords.serchTables_fromFolder(request, fetchedTablesFolder, response, candBuilder);
-			GenerateMatchingExample_withKeywords.serchTables_fromLucene(request, fetchedTablesFolder, response, candBuilder);
-
-	    	System.out.println(response);
+//			GenerateMatchingExample_withKeywords.serchTables_fromLucene(request, fetchedTablesFolder, response, candBuilder);
+			try {
+				GenerateMatchingExample_withKeywords.searchTablesFromLuceneBySubject(request, fetchedTablesFolder, response, candBuilder);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			System.out.println(response);
 	    	return ok(response);
 	    }
 	    
@@ -231,7 +378,7 @@ This is to avoid returning potentially big results in a single request, as we ex
 		}
 		                 
 	public Result ind() {
-        return ok(index.render("Your new application is ready."));
+        return ok("Your new application is ready.");
     }
 		
 }
