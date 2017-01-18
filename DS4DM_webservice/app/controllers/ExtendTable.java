@@ -136,6 +136,93 @@ the correspondence between instances in the table and those from the query table
 	    
 		}
 	
+	
+	public Result search(int max) {
+		
+
+		   
+	    JsonNode json = request().body().asJson();
+	    
+//	    String json_str = "{\"table\":{\"extentionAttributes\":[\"Population\"],\"headerRowIndex\":0,\"keyColumnIndex\":\"0\",\"relation\":[[\"Country\",\"Afghanistan\",\"Albania\",\"Algeria\",\"American Samoa\",\"Andorra\",\"Angola\",\"Anguilla\",\"Antigua and Barbuda\",\"Argentina\",\"Armenia\"],[\"Region\",\"South Asia\",\"Eastern Europe & Central Asia\",\"Middle East & North Africa\",\"Sub-Saharan Africa\",\"Latin America & Caribbean\",\"Latin America & Caribbean\",\"Eastern Europe & Central Asia\",\"OECD high income\",\"OECD high income\",\"Eastern Europe & Central Asia\"]]}}";
+	    if(json == null) {
+	        return badRequest("Expecting Json data");
+	    } else {
+	    	
+			File response = new File("public/exampleData/response.json");
+
+			ObjectMapper mapper = new ObjectMapper();
+			String json_str= "";
+			try {
+				json_str = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
+			} catch (JsonProcessingException e2) {
+				e2.printStackTrace();
+			}
+			
+			
+			File request = new File("public/exampleData/request_temp.json");
+
+			
+			try (FileOutputStream fop = new FileOutputStream(request)) {
+
+				// if file doesn't exists, then create it
+				if (!request.exists()) {
+					request.createNewFile();
+				}
+
+				// get the content in bytes
+				byte[] contentInBytes = json_str.getBytes();
+
+				fop.write(contentInBytes);
+				fop.flush();
+				fop.close();
+
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			
+//			JSONRelatedTablesRequest qts = mapper.convertValue(json, JSONRelatedTablesRequest.class);
+			JSONRelatedTablesRequest qts = new JSONRelatedTablesRequest();
+			try {
+				
+				
+				
+//				qts = mapper.readValue(json_str, JSONRelatedTablesRequest.class);
+				
+				ReadWriteGson<JSONRelatedTablesRequest> rwj = new ReadWriteGson<JSONRelatedTablesRequest>(qts);
+				qts = rwj.fromJson(request);
+				
+				System.out.println(qts.toString());
+
+			} catch (JsonParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (JsonMappingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			
+//			CandidateBuilder_fromJsonFolder candBuilder = new CandidateBuilder_fromJsonFolder(tebleReositoryFolder);
+			//TODO testing with hardcoded conf file
+			CandidateBuilder_fromLuceneIndex candBuilder = new CandidateBuilder_fromLuceneIndex(conf);
+
+			File fetchedTablesFolder = new File("public/exampleData/tables");
+			if (!fetchedTablesFolder.exists())
+				fetchedTablesFolder.mkdirs();
+//			GenerateMatchingExample_withKeywords.serchTables_fromFolder(request, fetchedTablesFolder, response, candBuilder);
+			GenerateMatchingExample_withKeywords.serchTables_fromLucene(request, fetchedTablesFolder, response, candBuilder);
+
+	    	System.out.println(response);
+	    	return ok(response);
+	    }
+	    
+	    
+		}
+	
 	//TODO fill logic
 	/**
 	 *  in this first iteration we assume: (i) one single attribute and (ii) we perform exact string matching of this attribute on potentially relevant tables. In the future we will design more sofisticated methods for (ii) and provide an attributeSuggestionService as a POST request to http://ds4dm.informatik.uni-mannheim.de/suggestAttributes passing the INPUT table in the same format
