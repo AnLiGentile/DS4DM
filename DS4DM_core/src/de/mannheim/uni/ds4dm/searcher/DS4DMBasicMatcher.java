@@ -33,6 +33,14 @@ public class DS4DMBasicMatcher implements Matcher {
 	
 	private int maximalNumberOfTables;
 	
+	public int getMaximalNumberOfTables() {
+		return maximalNumberOfTables;
+	}
+
+	public void setMaximalNumberOfTables(int maximalNumberOfTables) {
+		this.maximalNumberOfTables = maximalNumberOfTables;
+	}
+
 	// schema
 	public DS4DMBasicMatcher(JSONRelatedTablesRequest qts) {
 		super();

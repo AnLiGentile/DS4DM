@@ -58,48 +58,55 @@ public class CandidateBuilder_fromJsonFolder implements CandidateBuilder {
 					
 		Map<String,TableData> candidates = new HashMap<String,TableData>();
 		List<String> att = qts.getExtAtt();
-		for (File t : this.folderFile.listFiles()){
-			if (t.getName().endsWith(".json")){
-			AnnotatedTable at;
-			try {
-				at = AnnotatedTable.fromJson(t);
-				TableData table = at.getTable();
-				if (table==null){
-					//try and read as TableData directly
-					System.err.println(t + " does not contain object of type: "+AnnotatedTable.class);
-					table = TableData.fromJson(t);
-					System.err.println("Reading as: "+TableData.class);
-					if(table!=null){
-						System.err.println(t + " contains table: "+table.getTitle()+" num of columns: "+table.getRelation().length );
-					}
+		int max = qts.getMaximalNumberOfTables();
+		//TODO quick fix, just to limit the number of tables.
+		//TODO this function is gonna be replaced by lucene search 
+		int reached =0;
 
+			for (File t : this.folderFile.listFiles()) {
+				if (reached<max) {
+					reached++;
+					if (t.getName().endsWith(".json")) {
+					AnnotatedTable at;
+					try {
+						at = AnnotatedTable.fromJson(t);
+						TableData table = at.getTable();
+						if (table == null) {
+							//try and read as TableData directly
+							System.err.println(t + " does not contain object of type: " + AnnotatedTable.class);
+							table = TableData.fromJson(t);
+							System.err.println("Reading as: " + TableData.class);
+							if (table != null) {
+								System.err.println(t + " contains table: " + table.getTitle() + " num of columns: "
+										+ table.getRelation().length);
+							}
+
+						}
+						String[] head = table.getColumnHeaders();
+						//				JSONTableResponse table = Table2TableDS4DM.fromAnnotatedTable2JSONTableResponse(at.getTable(), t.getName());
+						//				for(String h : head){				
+						//					if (att.contains(h.toLowerCase())){
+						//						candidates.put(t.getName(),table);
+						//						break; //if at least one match exists
+						//					}
+						//				}
+						if (headersMatch(head, att)) {
+							candidates.put(t.getName(), table);
+						}
+
+					} catch (JsonSyntaxException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (Exception e) {
+						System.err.println("Error with file " + t);
+						e.printStackTrace();
+					}
 				}
-				String[] head = table.getColumnHeaders();
-//				JSONTableResponse table = Table2TableDS4DM.fromAnnotatedTable2JSONTableResponse(at.getTable(), t.getName());
-//				for(String h : head){				
-//					if (att.contains(h.toLowerCase())){
-//						candidates.put(t.getName(),table);
-//						break; //if at least one match exists
-//					}
-//				}
-				if (headersMatch(head, att)){
-					candidates.put(t.getName(),table);
-				}
-			
-			} catch (JsonSyntaxException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (Exception e) {
-				System.err.println("Error with file "+t);
-				e.printStackTrace();
-			}
+			} 
 		}
-		}
-		
-		
 		return candidates;
 	}
 

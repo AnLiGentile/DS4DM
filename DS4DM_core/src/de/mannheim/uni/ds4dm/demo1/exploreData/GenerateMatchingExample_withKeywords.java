@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +15,7 @@ import com.rapidminer.extension.json.Correspondence;
 import com.rapidminer.extension.json.JSONRelatedTablesRequest;
 import com.rapidminer.extension.json.JSONRelatedTablesResponse;
 import com.rapidminer.extension.json.JSONTableResponse;
+import com.rapidminer.extension.json.MetaDataTable;
 import com.rapidminer.extension.json.TableInformation;
 
 import de.mannheim.uni.ds4dm.model.TableData;
@@ -163,6 +165,16 @@ public class GenerateMatchingExample_withKeywords {
 		}
 	}
 
+	/**
+	 * generate the matching results between query table and all candidate tables
+	 * save matches and metadata in a temp folder as json files
+	 * @param fetchedTablesFolder
+	 * @param response
+	 * @param matcher
+	 * @param responseMappimg
+	 * @param candidates
+	 * @throws IOException
+	 */
 	private static void generateMatches(File fetchedTablesFolder, File response, DS4DMBasicMatcher matcher,
 			JSONRelatedTablesResponse responseMappimg, Map<String, TableData> candidates) throws IOException {
 
@@ -185,8 +197,8 @@ public class GenerateMatchingExample_withKeywords {
 
 					Map<String, Correspondence> tableSchema2TargetSchema = new HashMap<String, Correspondence>();
 
-					JSONTableResponse t_sab = TableData2TableDS4DM
-							.fromAnnotatedTable2JSONTableResponse(table.getValue(), table.getKey());
+//					JSONTableResponse t_sab = TableData2TableDS4DM
+//							.fromAnnotatedTable2JSONTableResponse(table.getValue(), table.getKey());
 
 					String[] relTableHeadres = table.getValue().getColumnHeaders();
 		
@@ -194,17 +206,20 @@ public class GenerateMatchingExample_withKeywords {
 
 					for (int i = 0; i < relTableHeadres.length; i++) {
 						String currentAttribute = StringNormalizer.format(relTableHeadres[i]);
+						double confidence = 0;
+						//TODO this is exact string matching, can be replaced with string similarity
 						if (matcher.getNormalizedTargetSchema().contains(currentAttribute)) {
+							confidence = 1; //TODO as it's exact string matching, it's either matching or not, replace with string sim score
 							int matchedIndex = matcher.getNormalizedTargetSchema().indexOf(currentAttribute);
 
 							tableSchema2TargetSchema.put(Integer.toString(i) + "_" + relTableHeadres[i],
-									new Correspondence(matcher.getTargetSchema().get(matchedIndex), 0.99));
+									new Correspondence(matcher.getTargetSchema().get(matchedIndex), confidence));
 							// TODO remove the index from the name, use these
 							// instead of previous
 							// tableSchema2TargetSchema.put(relTableHeadres[i],
 							// new
 							// Correspondence(matcher.getTargetSchema().get(matchedIndex),
-							// 0.99));
+							// confidence));
 							// System.out.println("mapped: "
 							// + matchedIndex + " --> " + i);
 						}
@@ -219,7 +234,6 @@ public class GenerateMatchingExample_withKeywords {
 					tm_ds4dm.setTableSchema2TargetSchema(tableSchema2TargetSchema);
 
 					// map instances
-
 					Map<String, Correspondence> instancesCorrespondences2QueryTable = new HashMap<String, Correspondence>();
 
 					// get the subject column and check if present in query
@@ -250,6 +264,21 @@ public class GenerateMatchingExample_withKeywords {
 
 						tm_ds4dm.setInstancesCorrespondences2QueryTable(instancesCorrespondences2QueryTable);
 						relevamntTables_ds4dm.add(tm_ds4dm);
+						//TODO fill properly
+						double tableScore = 0;
+						Date lastModified = new Date(System.currentTimeMillis());
+						String textBeforeTable = "";
+						String textAfterTable = "";
+						String title = "";
+						double coverage = 0;
+						double ratio = 0;
+						double trust = 0;
+						double emptyValues = 0;
+						MetaDataTable meta = new MetaDataTable(tableScore, lastModified.toString(), table.getValue().getUrl(), textBeforeTable, textAfterTable,
+						title, coverage, ratio, trust, emptyValues);
+						
+						JSONTableResponse t_sab = TableData2TableDS4DM
+						.fromAnnotatedTable2JSONTableResponse(table.getValue(), table.getKey(),meta);
 						ReadWriteGson<JSONTableResponse> resp = new ReadWriteGson<JSONTableResponse>(t_sab);
 						File current_table = new File(fetchedTablesFolder.getAbsolutePath() + "/" + table.getKey());
 						resp.writeJson(current_table);
