@@ -19,25 +19,25 @@ import de.mannheim.uni.utils.TableColumnTypeGuesser;
  */
 public class TableData2TableDS4DM {
 	
-	public static JSONTableResponse fromAnnotatedTable2JSONTableResponse(TableData t, String tableName) {
+	public static JSONTableResponse fromAnnotatedTable2JSONTableResponse(TableData t, String tableName, MetaDataTable meta) {
 
 		
 		//TODO fill metadata
-		double tableScore = 0;
-		Date lastModified = new Date(System.currentTimeMillis());
-		String URL = "";
-		String textBeforeTable = "";
-		String textAfterTable = "";
-		String title = "";
-		double coverage = 0;
-		double ratio = 0;
-		double trust = 0;
-		double emptyValues = 0;
+//		double tableScore = 0;
+//		Date lastModified = new Date(System.currentTimeMillis());
+//		String URL = "";
+//		String textBeforeTable = "";
+//		String textAfterTable = "";
+//		String title = "";
+//		double coverage = 0;
+//		double ratio = 0;
+//		double trust = 0;
+//		double emptyValues = 0;
 		
 		JSONTableResponse t_sab = new JSONTableResponse();
 
 		//TODO fill metadata
-		t_sab.setMetaData(null);
+		t_sab.setMetaData(meta);
 
 		t_sab.setHasHeader(true);
 		t_sab.setHasKeyColumn(true);
@@ -66,11 +66,11 @@ public class TableData2TableDS4DM {
 		t_sab.setDataTypes(dataT);
 
 		t_sab.setTableName(tableName);
-		URL = t.getUrl();
-		
+//		URL = t.getUrl();
+		meta.setURL(t.getUrl());
 
-		MetaDataTable meta = new MetaDataTable(tableScore, lastModified.toString(), URL, textBeforeTable, textAfterTable,
-				title, coverage, ratio, trust, emptyValues);
+//		MetaDataTable meta = new MetaDataTable(tableScore, lastModified.toString(), URL, textBeforeTable, textAfterTable,
+//				title, coverage, ratio, trust, emptyValues);
 		t_sab.setMetaData(meta);
 		return t_sab;
 	}
