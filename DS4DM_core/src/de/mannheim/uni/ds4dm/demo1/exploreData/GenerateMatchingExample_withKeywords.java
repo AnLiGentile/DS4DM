@@ -267,13 +267,25 @@ public class GenerateMatchingExample_withKeywords {
 						//TODO fill properly
 						double tableScore = 0;
 						Date lastModified = new Date(System.currentTimeMillis());
-						String textBeforeTable = "";
-						String textAfterTable = "";
-						String title = "";
-						double coverage = 0;
-						double ratio = 0;
-						double trust = 0;
+						String u = (table.getValue().getUrl()!=null) ? table.getValue().getUrl() : "";				
+						
+
+						String textBeforeTable = (table.getValue().getTextBeforeTable()!=null) ? table.getValue().getTextBeforeTable() : "";	
+						String textAfterTable = (table.getValue().getTextAfterTable()!=null) ? table.getValue().getTextAfterTable() : "";	
+						String title = (table.getValue().getTitle()!=null) ? table.getValue().getTitle() : "";	
+						double coverage = (double) instancesCorrespondences2QueryTable.size()/matcher.getSubjectsFromQueryTable().size();
+						double ratio = (double) instancesCorrespondences2QueryTable.size()/col.length;
+						double trust = 1; //TODO to be calculated based on provenance
 						double emptyValues = 0;
+						System.out.print(" tableScore "+tableScore);
+						System.out.print(" coverage "+coverage);
+						System.out.print(" ratio "+ratio);
+						System.out.print(" trust "+trust);
+						System.out.print(" emptyValues "+emptyValues);
+						System.out.print(" textBeforeTable "+textBeforeTable);
+						System.out.print(" textAfterTable "+textAfterTable);
+						System.out.print(" title "+title);
+
 						MetaDataTable meta = new MetaDataTable(tableScore, lastModified.toString(), table.getValue().getUrl(), textBeforeTable, textAfterTable,
 						title, coverage, ratio, trust, emptyValues);
 						
