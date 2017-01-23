@@ -1,5 +1,5 @@
 <projectDescription>
-  <name>rmw</name>
+  <name>ds4dm_webservice</name>
   <buildSpec>
     <buildCommand>
       <name>org.scala-ide.sdt.core.scalabuilder</name>

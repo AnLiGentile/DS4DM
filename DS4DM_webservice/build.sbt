@@ -1,4 +1,4 @@
-name := """rmw"""
+name := """ds4dm_webservice"""
 
 version := "1.0-SNAPSHOT"
 
