@@ -8,6 +8,7 @@ GET     /ind                       controllers.ExtendTable.ind()
 GET /fetchTable  					controllers.ExtendTable.fetchTable(name)
 
 POST /search 						controllers.ExtendTable.search()
+POST /searcht2k 					controllers.ExtendTableT2k.search()
 POST /suggestAttributes 						controllers.ExtendTable.suggestAttributes()
 POST /fetchTablePOST  					controllers.ExtendTable.fetchTablePOST()
 
