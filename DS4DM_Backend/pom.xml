@@ -57,129 +57,35 @@
 	</build>
 
 	<dependencies>
-<!-- https://mvnrepository.com/artifact/org.graphchi/graphchi-java_2.11 -->
-<dependency>
-    <groupId>org.graphchi</groupId>
-    <artifactId>graphchi-java_2.11</artifactId>
-    <version>0.2.1</version>
-</dependency>
+
 		<dependency>
-			<groupId>edu.fppr</groupId>
-			<artifactId>fppr</artifactId>
-			<version>0.1</version>
-		</dependency>
-			<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-core</artifactId>
-			<version>1.1.2</version>
-		</dependency>
-			<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>2.11.3</version>
-		</dependency>
-			<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
 			<version>2.3</version>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>com.wcohen.ss</groupId>
 			<artifactId>jwi</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons</artifactId>
-			<version>1.2.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.jtar</groupId>
-			<artifactId>jtar</artifactId>
-			<version>1.1</version>
-		</dependency>
 
 		<dependency>
-			<groupId>org.apache.jena</groupId>
-			<artifactId>jena-core</artifactId>
-			<version>2.11.0</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>slf4j-api</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>slf4j-log4j12</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-			</exclusions>
+			<groupId>com.rapidminer</groupId>
+			<artifactId>data-search</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.jena</groupId>
-			<artifactId>jena-arq</artifactId>
-			<version>2.11.0</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>slf4j-api</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>slf4j-log4j12</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.jena</groupId>
-			<artifactId>jena-iri</artifactId>
-			<version>1.0.0</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>slf4j-api</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>slf4j-log4j12</artifactId>
-					<groupId>org.slf4j</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		
+
 		<dependency>
 			<groupId>de.mannheim.uni</groupId>
 			<artifactId>ds4dm_dataModel</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency> 
-		<dependency>
-			<groupId>de.mannheim.uni</groupId>
-			<artifactId>ds4dm_preprocessing</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
 			<version>2.3</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-core</artifactId>
-			<version>4.6.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-queries</artifactId>
-			<version>4.6.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-analyzers-common</artifactId>
-			<version>4.6.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-queryparser</artifactId>
-			<version>4.6.0</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.apache.directory.studio</groupId>
 			<artifactId>org.apache.commons.lang</artifactId>
@@ -190,30 +96,12 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.4</version>
 		</dependency>
-		<!-- <dependency> <groupId>org.apache.hadoop</groupId> <artifactId>hadoop-core</artifactId> 
-			<version>1.1.2</version> </dependency> -->
-		<!-- <dependency> <groupId>org.apache.pig</groupId> <artifactId>pig</artifactId> 
-			<version>0.11.0</version> <exclusions> <exclusion> <artifactId>slf4j-api</artifactId> 
-			<groupId>org.slf4j</groupId> </exclusion> </exclusions> </dependency> -->
-
-
-
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons</artifactId>
 			<version>1.2.0</version>
 		</dependency>
-		<dependency>
-			<groupId>com.jtar</groupId>
-			<artifactId>jtar</artifactId>
-			<version>1.1</version>
-		</dependency>
 
-		<!--<dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-api</artifactId> 
-			<version>1.4.3</version> </dependency> <dependency> <groupId>org.apache.directory.studio</groupId> 
-			<artifactId>org.slf4j.log4j12</artifactId> <version>1.7.2</version> </dependency> 
-			<dependency> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j</artifactId> 
-			<version>2.0-beta9</version> <type>pom</type> </dependency> -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -255,6 +143,41 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.7.2</version>
 		</dependency>
+		<!-- <dependency> <groupId>org.apache.hadoop</groupId> <artifactId>hadoop-core</artifactId> 
+			<version>1.1.2</version> </dependency> -->
+		<!-- <dependency> <groupId>org.apache.pig</groupId> <artifactId>pig</artifactId> 
+			<version>0.11.0</version> <exclusions> <exclusion> <artifactId>slf4j-api</artifactId> 
+			<groupId>org.slf4j</groupId> </exclusion> </exclusions> </dependency> -->
+		<!-- <dependency> <groupId>com.jtar</groupId> <artifactId>jtar</artifactId> 
+			<version>1.1</version> </dependency> -->
+		<!--<dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-api</artifactId> 
+			<version>1.4.3</version> </dependency> <dependency> <groupId>org.apache.directory.studio</groupId> 
+			<artifactId>org.slf4j.log4j12</artifactId> <version>1.7.2</version> </dependency> 
+			<dependency> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j</artifactId> 
+			<version>2.0-beta9</version> <type>pom</type> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.graphchi/graphchi-java_2.11 -->
+		<!-- <dependency> <groupId>edu.fppr</groupId> <artifactId>fppr</artifactId> 
+			<version>0.1</version> </dependency> -->
+		<!-- <dependency> <groupId>org.apache.hadoop</groupId> <artifactId>hadoop-core</artifactId> 
+			<version>1.1.2</version> </dependency> -->
+		<!-- <dependency> <groupId>org.mongodb</groupId> <artifactId>mongo-java-driver</artifactId> 
+			<version>2.11.3</version> </dependency> -->
+		<!-- <dependency> <groupId>com.jtar</groupId> <artifactId>jtar</artifactId> 
+			<version>1.1</version> </dependency> -->
+		<!-- dependency> <groupId>org.apache.jena</groupId> <artifactId>jena-arq</artifactId> 
+			<version>2.11.0</version> <exclusions> <exclusion> <artifactId>slf4j-api</artifactId> 
+			<groupId>org.slf4j</groupId> </exclusion> <exclusion> <artifactId>slf4j-log4j12</artifactId> 
+			<groupId>org.slf4j</groupId> </exclusion> </exclusions> </dependency> <dependency> 
+			<groupId>org.apache.jena</groupId> <artifactId>jena-iri</artifactId> <version>1.0.0</version> 
+			<exclusions> <exclusion> <artifactId>slf4j-api</artifactId> <groupId>org.slf4j</groupId> 
+			</exclusion> <exclusion> <artifactId>slf4j-log4j12</artifactId> <groupId>org.slf4j</groupId> 
+			</exclusion> </exclusions> </dependency -->
+		<!-- <dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-core</artifactId> 
+			<version>4.6.0</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-queries</artifactId> <version>4.6.0</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-analyzers-common</artifactId> 
+			<version>4.6.0</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-queryparser</artifactId> <version>4.6.0</version> </dependency> -->
 	</dependencies>
 
 </project>
