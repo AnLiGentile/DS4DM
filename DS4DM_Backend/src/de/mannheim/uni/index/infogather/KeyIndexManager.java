@@ -35,7 +35,7 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
-import com.hp.hpl.jena.sparql.function.library.pi;
+//import com.hp.hpl.jena.sparql.function.library.pi;
 
 import de.mannheim.uni.TableProcessor.TableManager;
 import de.mannheim.uni.model.IndexEntry;
