@@ -287,9 +287,16 @@ public class GenerateMatchingExample_withKeywords {
 
 						MetaDataTable meta = new MetaDataTable(tableScore, lastModified.toString(), table.getValue().getUrl(), textBeforeTable, textAfterTable,
 						title, coverage, ratio, trust, emptyValues);
-						
+						System.out.println("table.getValue() "+ table.getValue());
+						System.out.println("table.getKey() "+ table.getKey());
+						System.out.println("meta "+ meta);
+
 						JSONTableResponse t_sab = TableData2TableDS4DM
 						.fromAnnotatedTable2JSONTableResponse(table.getValue(), table.getKey(),meta);
+						System.out.println("generated table "+ t_sab.getTableName());
+						
+						
+						
 						ReadWriteGson<JSONTableResponse> resp = new ReadWriteGson<JSONTableResponse>(t_sab);
 						File current_table = new File(fetchedTablesFolder.getAbsolutePath() + "/" + table.getKey());
 						resp.writeJson(current_table);

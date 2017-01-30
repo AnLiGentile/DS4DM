@@ -14,8 +14,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 import de.mannheim.uni.ds4dm.model.TableColumn.ColumnDataType;
-import de.mannheim.uni.tableprocessor.IO.ListHandler;
-import de.mannheim.uni.utils.data.Pair;
+import de.mannheim.uni.IO.ListHandler;
+import de.mannheim.uni.model.Pair;
 
 public class TableMapping {
 

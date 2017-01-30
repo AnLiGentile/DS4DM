@@ -16,7 +16,7 @@ import org.apache.commons.math3.stat.descriptive.SynchronizedDescriptiveStatisti
 
 import de.mannheim.uni.ds4dm.model.TableColumn.ColumnDataType;
 import de.mannheim.uni.ds4dm.tableprocessor.ColumnType;
-import de.mannheim.uni.unit.parsers.DateUtil;
+import de.mannheim.uni.parsers.DateUtil;
 import de.mannheim.uni.units.UnitParserDomi;
 import de.mannheim.uni.units.Unit_domi;
 import de.mannheim.uni.utils.Variables;

@@ -96,14 +96,13 @@
 		<!-- <dependency> <groupId>de.mannheim.uni</groupId> <artifactId>TypeGuesser</artifactId> 
 			<version>0.0.1-SNAPSHOT</version> </dependency> -->
 
-		<dependency>
+		<!-- dependency>
 			<groupId>de.mannheim.uni</groupId>
 			<artifactId>ds4dm_search</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency-->
 
 		<dependency>
-
 			<groupId>com.rapidminer</groupId>
 			<artifactId>data-search</artifactId>
 			<version>0.0.1-SNAPSHOT</version>

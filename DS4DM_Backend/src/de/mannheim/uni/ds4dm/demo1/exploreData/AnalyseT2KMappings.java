@@ -18,7 +18,7 @@ import de.mannheim.uni.ds4dm.model.AnnotatedTable;
 import de.mannheim.uni.ds4dm.model.TableData;
 import de.mannheim.uni.ds4dm.model.TableMapping;
 import de.mannheim.uni.ds4dm.utils.MapUtil;
-import de.mannheim.uni.utils.data.Pair;
+import de.mannheim.uni.model.Pair;
 
 public class AnalyseT2KMappings {
 

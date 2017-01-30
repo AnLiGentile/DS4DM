@@ -1,26 +1,26 @@
 [0m[[0minfo[0m] [0mUpdating {file:/Users/annalisa/git/DS4DM/DS4DM_webservice/}root...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: rmw#rmw_2.11;1.0-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1847735b[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18512fbc[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#twirl-api_2.11;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-api_2.11;1.1.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#twirl-api_2.11;1.1.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#twirl-api_2.11;1.1.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->runtime(*)][0m
@@ -54,14 +54,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-enhancer;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-enhancer;1.1.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-enhancer;1.1.0[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-enhancer;1.1.0 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.javassist#javassist;3.18.2-GA ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.javassist#javassist;3.18.2-GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -72,14 +72,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-server_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-server_2.11;2.4.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-server_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-server_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -563,14 +563,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java_2.11;2.4.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -798,14 +798,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.apache.tomcat#tomcat-servlet-api;8.0.21 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-netty-server_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-netty-server_2.11;2.4.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-netty-server_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-netty-server_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.play#play-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -843,14 +843,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->io.netty#netty;3.10.4.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.netty#netty-http-pipelining;1.1.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.netty#netty-http-pipelining;1.1.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-jdbc_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-jdbc_2.11;2.4.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-jdbc_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-jdbc_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-jdbc_2.11;2.4.4 [compile->master(compile)][0m
@@ -948,14 +948,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-jdbc_2.11;2.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-cache_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-cache_2.11;2.4.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-cache_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-cache_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -981,14 +981,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->net.sf.ehcache#ehcache-core;2.6.11 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->net.sf.ehcache#ehcache-core;2.6.11 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-ws_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-ws_2.11;2.4.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-ws_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-ws_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -1126,17 +1126,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
@@ -1156,18 +1156,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -1500,10 +1500,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.4.4->org.scala-lang#scala-reflect;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -1650,10 +1650,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.apache.tomcat#tomcat-servlet-api;8.0.21 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.play#play-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -1677,10 +1677,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-jdbc_2.11;2.4.4 [compile->master(compile)][0m
@@ -1750,10 +1750,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.4.4->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -1773,10 +1773,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -1878,18 +1878,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
@@ -1909,18 +1909,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -2253,10 +2253,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.4.4->org.scala-lang#scala-reflect;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -2403,10 +2403,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.apache.tomcat#tomcat-servlet-api;8.0.21 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.play#play-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -2430,10 +2430,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-jdbc_2.11;2.4.4 [compile->master(compile)][0m
@@ -2503,10 +2503,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.4.4->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -2526,10 +2526,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -2631,14 +2631,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.4.4 {test=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-test_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-test_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -3095,21 +3095,21 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->com.google.code.findbugs#jsr305;2.0.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->org.fluentlenium#fluentlenium-core;0.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->org.fluentlenium#fluentlenium-core;0.10.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
@@ -3129,18 +3129,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -3473,10 +3473,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.4.4->org.scala-lang#scala-reflect;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -3623,10 +3623,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.apache.tomcat#tomcat-servlet-api;8.0.21 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.play#play-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -3650,10 +3650,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-jdbc_2.11;2.4.4 [compile->master(compile)][0m
@@ -3723,10 +3723,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.4.4->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -3746,10 +3746,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -3851,20 +3851,20 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
@@ -3884,18 +3884,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -4228,10 +4228,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.4.4->org.scala-lang#scala-reflect;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -4378,10 +4378,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.apache.tomcat#tomcat-servlet-api;8.0.21 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.play#play-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -4405,10 +4405,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-jdbc_2.11;2.4.4 [compile->master(compile)][0m
@@ -4478,10 +4478,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.4.4->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -4501,10 +4501,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -4606,20 +4606,20 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)][0m
@@ -4639,18 +4639,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -4983,10 +4983,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play_2.11;2.4.4->org.scala-lang#scala-reflect;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-server_2.11;2.4.4->com.typesafe.play#play-iteratees_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -5133,10 +5133,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.apache.tomcat#tomcat-servlet-api;8.0.21 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.11;2.4.4->org.javassist#javassist;3.19.0-GA [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-netty-server_2.11;2.4.4->com.typesafe.play#play-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -5160,10 +5160,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.netty#netty-http-pipelining;1.1.4->io.netty#netty;3.10.4.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-jdbc_2.11;2.4.4 [compile->master(compile)][0m
@@ -5233,10 +5233,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.11;2.4.4->tyrex#tyrex;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.11;2.4.4->com.typesafe.play#play-java_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -5256,10 +5256,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.11->org.slf4j#slf4j-api;1.7.12 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->com.typesafe.play#play_2.11;2.4.4 [compile->master(compile)][0m
@@ -5361,10 +5361,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-core;1.2.1.2 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ws_2.11;2.4.4->oauth.signpost#signpost-commonshttp4;1.2.1.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java-ws_2.11;2.4.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.4.4->com.typesafe.play#play-netty-server_2.11;2.4.4 [compile->master(compile)][0m
@@ -5659,22 +5659,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-support;2.44.0->org.seleniumhq.selenium#selenium-remote-driver;2.44.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.44.0->org.webbitserver#webbit;0.4.14 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.seleniumhq.selenium#selenium-java;2.44.0->org.webbitserver#webbit;0.4.14 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.4.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [docs][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-omnidoc_2.11;2.4.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-omnidoc_2.11;2.4.4 {docs=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-omnidoc_2.11;2.4.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-omnidoc_2.11;2.4.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-omnidoc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-omnidoc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-omnidoc_2.11;2.4.4->com.typesafe.play#play-docs_2.11;2.4.4 [compile->master(compile)][0m
@@ -6165,18 +6165,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-omnidoc_2.11;2.4.4->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-omnidoc_2.11;2.4.4->com.typesafe.play#play-docs_2.11;2.4.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-omnidoc_2.11;2.4.4->com.typesafe.play#play-docs_2.11;2.4.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.11;2.4.4 [docs->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for rmw#rmw_2.11;1.0-SNAPSHOT [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->default][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.11.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.6 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.11.6 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->default][0m
@@ -6228,19 +6228,19 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.11.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving jline#jline;2.12.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.12.1 {optional=[compile(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;2.12.1[0m
 [0m[[0mdebug[0m] [0m	found jline#jline;2.12.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies rmw#rmw_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
@@ -6374,19 +6374,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1898ms :: artifacts dl 51ms[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT compile produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT runtime produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT test produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT provided produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT optional produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT compile-internal produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT test-internal produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT plugin produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT sources produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT docs produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT pom produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for rmw#rmw_2.11;1.0-SNAPSHOT scala-tool produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/rmw-rmw_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1898ms resolve - 51ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3645ms :: artifacts dl 181ms[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT compile produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT runtime produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT test produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT provided produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT optional produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT compile-internal produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT test-internal produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT plugin produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT sources produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT docs produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT pom produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for ds4dm_webservice#ds4dm_webservice_2.11;1.0-SNAPSHOT scala-tool produced in /Users/annalisa/git/DS4DM/DS4DM_webservice/target/resolution-cache/reports/ds4dm_webservice-ds4dm_webservice_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (3645ms resolve - 181ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

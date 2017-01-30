@@ -8,10 +8,10 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 import de.mannheim.uni.ds4dm.model.TableColumn.ColumnDataType;
-import de.mannheim.uni.unit.parsers.DateUtil;
-import de.mannheim.uni.unit.parsers.GeoCoordinateParser;
-import de.mannheim.uni.unit.parsers.NumericParser;
-import de.mannheim.uni.unit.parsers.URLParser;
+import de.mannheim.uni.parsers.DateUtil;
+import de.mannheim.uni.parsers.GeoCoordinateParser;
+import de.mannheim.uni.parsers.NumericParser;
+import de.mannheim.uni.parsers.URLParser;
 import de.mannheim.uni.units.UnitParserDomi;
 import de.mannheim.uni.units.Unit_domi;
 import de.mannheim.uni.utils.Variables;
