@@ -43,11 +43,13 @@ public class CandidateBuilder_fromLuceneIndex implements CandidateBuilder {
 		
 		Map<String,TableData> candidates = new HashMap<String,TableData>();
 		List<String> att = qts.getExtAtt();
+		int max = qts.getMaximalNumberOfTables();
 		String [] headers = att.toArray(new String[att.size()]);
 		
 		//TODO close things that are open
+//		Set<String> tableNames = this.hs.searchTablesByHeaders(headers,max); //limit the candidate pool
 		Set<String> tableNames = this.hs.searchTablesByHeaders(headers);
-		
+
 		for (String t:tableNames){
 //			candidates.put(t.getName(),table);
 //TODO load a table 

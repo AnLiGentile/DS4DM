@@ -118,7 +118,7 @@ public class GenerateMatchingExample_withKeywords {
 			// fetch candidate tables
 			// TODO check why values are not populated properly
 			Map<String, TableData> candidates = candBuilder.finCandidates(matcher);
-			System.out.println("relevant tables: " + candidates.keySet());
+			System.out.println("Number of relevant tables: " + candidates.size());
 
 			{
 				try {
@@ -177,12 +177,18 @@ public class GenerateMatchingExample_withKeywords {
 	private static void generateMatches(File fetchedTablesFolder, File response, DS4DMBasicMatcher matcher,
 			JSONRelatedTablesResponse responseMappimg, Map<String, TableData> candidates) throws IOException {
 
+		
+		int maxTables = matcher.getMaximalNumberOfTables();
 		// read all relevant tables
 		// for each table
 
 		List<TableInformation> relevamntTables_ds4dm = new ArrayList<TableInformation>();
 
+		int reached =0;
+		
 		for (Entry<String, TableData> table : candidates.entrySet()) {
+			if (reached<maxTables){
+				
 			// System.out.println("*** MATCHING TABLE ***"+
 			// table.getKey());//add table name to TableData
 
@@ -275,7 +281,7 @@ public class GenerateMatchingExample_withKeywords {
 						double coverage = (double) instancesCorrespondences2QueryTable.size()/matcher.getSubjectsFromQueryTable().size();
 						double ratio = (double) instancesCorrespondences2QueryTable.size()/col.length;
 						double trust = 1; //TODO to be calculated based on provenance
-						double emptyValues = 0;
+						double emptyValues = 0; //TODO count these
 						System.out.print(" tableScore "+tableScore);
 						System.out.print(" coverage "+coverage);
 						System.out.print(" ratio "+ratio);
@@ -304,6 +310,7 @@ public class GenerateMatchingExample_withKeywords {
 						System.out.println("schema correspondences: " + tm_ds4dm.getTableSchema2TargetSchema());
 						System.out.println(
 								"instances correspondences: " + tm_ds4dm.getInstancesCorrespondences2QueryTable());
+						reached ++;
 					}
 
 				} catch (JsonSyntaxException e) {
@@ -320,6 +327,7 @@ public class GenerateMatchingExample_withKeywords {
 			} else {
 				System.err.println("Empty relation in table: " + table.getKey());
 			}
+		}else break;
 		}
 
 		responseMappimg.setRelatedTables(relevamntTables_ds4dm);

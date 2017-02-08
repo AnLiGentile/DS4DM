@@ -30,6 +30,16 @@ public class DS4DMBasicMatcher implements Matcher {
 	private Map<Integer, Integer> e2t; // map extention attribute to target
 
 	private List<ColumnDataType> targetSchemaDataTypes = new ArrayList<ColumnDataType>();
+	
+	private int maximalNumberOfTables;
+	
+	public int getMaximalNumberOfTables() {
+		return maximalNumberOfTables;
+	}
+
+	public void setMaximalNumberOfTables(int maximalNumberOfTables) {
+		this.maximalNumberOfTables = maximalNumberOfTables;
+	}
 
 	// schema
 	public DS4DMBasicMatcher(JSONRelatedTablesRequest qts) {
@@ -92,8 +102,12 @@ public class DS4DMBasicMatcher implements Matcher {
 			this.targetSchemaDataTypes.add(type);
 		}
 		
+		//set maximalNumberOfTables
+		this.maximalNumberOfTables = qts.getMaximalNumberOfTables();
+		
 		System.out.println("target schema: " + targetSchema);
 		System.out.println("subject column: " + subjectsFromQueryTable);
+		System.out.println("max number of tables: " + maximalNumberOfTables);
 
 	}
 	

@@ -46,6 +46,31 @@ public class HeaderSearcher  {
 
 	}
 
+	public Set<String> searchTablesByHeaders(String[] args, int max) {
+		Set<String> candidateTables = new HashSet<String>();
+		String 			query="";
+
+		if (args.length>0)
+			query=args[0];
+		
+
+
+		AttributesIndexManager aim = new AttributesIndexManager(pipe);
+
+		List<ColumnIndexEntry> cie = aim.searchIndex(query);
+		int reached =0;
+		for (ColumnIndexEntry e : cie){
+			if (reached<max) {
+				reached++;
+			candidateTables.add(e.getTableHeader());
+			System.out.println(e.getColumnHeader() +" in --> "+e.getTableHeader());
+			}else break;
+			}
+		return candidateTables;
+
+	}
+
+	
 
 	public static void main(String[] args) {
 		

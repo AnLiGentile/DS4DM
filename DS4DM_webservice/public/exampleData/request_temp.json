@@ -1,7 +1,7 @@
 {
-  "extensionAttributes" : [ "population" ],
+  "extensionAttributes" : [ "gdp" ],
   "keyColumnIndex" : "0",
   "maximalNumberOfTables" : 100,
   "rankingPolicy" : "coverage",
-  "queryTable" : [ [ "Country", "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antigua and Barbuda", "Argentina", "Armenia" ], [ "Region", "South Asia", "Eastern Europe & Central Asia", "Middle East & North Africa", "Sub-Saharan Africa", "Latin America & Caribbean", "Latin America & Caribbean", "Eastern Europe & Central Asia", "OECD high income", "OECD high income", "Eastern Europe & Central Asia" ] ]
+  "queryTable" : [ [ "Country", "Afghanistan", "United States", "Mexico", "Brazil", "Angola", "Iran", "Germany", "Argentina", "France", "Pakistan", "China", "Canada", "Israel" ] ]
 }
