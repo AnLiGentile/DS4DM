@@ -1,4 +1,4 @@
-"joule",|"J","joule","Τζάουλ"
+"joule"|"J","joule","Τζάουλ"
 "kilojoule"|"kJ","kilojoule"|1000.0
 "erg"|"erg"|1.0E-7
 "milliwattHour"|"mWh","milliwatt-hour"|3.6
