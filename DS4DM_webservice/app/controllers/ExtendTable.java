@@ -97,8 +97,7 @@ the correspondence between instances in the table and those from the query table
 //			JSONRelatedTablesRequest qts = mapper.convertValue(json, JSONRelatedTablesRequest.class);
 			JSONRelatedTablesRequest qts = new JSONRelatedTablesRequest();
 			try {
-				
-				
+					
 				
 //				qts = mapper.readValue(json_str, JSONRelatedTablesRequest.class);
 				
